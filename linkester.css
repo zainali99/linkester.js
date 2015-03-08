@@ -2,15 +2,20 @@ a span {
 position: absolute;
 background: #000;visibility:hidden;
 color: #FFF;
+transition:all 0.1s ease;opacity:0;
 padding: 4px;
-border-radius: 3px;
-margin: 15px -76px;
+border-radius: 3px;transform: scale(0.9,0.9);
+margin: 16px -76px;
 }
 a span div {
 display: inline-block;
 }
 
-a span div#protocol-secure {
+
+
+
+
+div#protocol-secure {
 color: rgb(70, 201, 70);
 }
-a:hover span{visibility:visible;}
+a:hover span{visibility:visible;transform: scale(1,1);opacity:1;}
