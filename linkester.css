@@ -1,16 +1,19 @@
-a span {
-position: absolute;
-background: #000;visibility:hidden;
-color: #FFF;
-transition:all 0.1s ease;opacity:0;
-padding: 4px;
-border-radius: 3px;transform: scale(0.9,0.9);
-margin: 16px -76px;
+div#linkester-js-element {
+  position: absolute;
+  background: #000;
+  visibility: hidden;
+  color: #FFF;
+  transition: all 0.1s ease;
+  opacity: 0;
+  padding: 4px;
+  border-radius: 3px;
+  transform: scale(0.9,0.9);
 }
-a span div {
-display: inline-block;
+#linkester-js-element div {
+	display:inline-block;
 }
 
+a:hover + #linkester-js-element{visibility:visible;transform: scale(1,1);opacity:1;}
 
 
 
@@ -18,4 +21,4 @@ display: inline-block;
 div#protocol-secure {
 color: rgb(70, 201, 70);
 }
-a:hover span{visibility:visible;transform: scale(1,1);opacity:1;}
+
