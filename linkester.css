@@ -16,7 +16,7 @@ div#linkester-js-element {
 a:hover + #linkester-js-element{visibility:visible;transform: scale(1,1);opacity:1;}
 
 
-
+/* protocol */
 
 div#protocol-secure {
 color: rgb(70, 201, 70);
