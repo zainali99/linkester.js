@@ -4,46 +4,43 @@ window.onload = function() {
 		txt, newTrigger, browser,
 		cacheToken, element,
 		o;
+        
 	for(var i=0; i < obj.length; i++){
-		obj[i].token = "token:"+i;
+		obj[i].token = "token:"+i+"_href:"+obj[i];
 		cacheToken= obj[i].token;
 		o = obj[i];
 		element = document.createElement("span");
 		getText();
-		element.innerHTML = txt;
-		o.appendChild(element);
-			//log
+
+o.insertAdjacentHTML ("afterEnd", txt);
+//log
 			console.log(cacheToken);
 			getHttps();
-			edit();
+			
 
 
 	}
 
 	function  getHttps() {
 		if(o.protocol=="https:"){
-			console.log("secure:"+o)
+			
+			console.log("token_SECURE_href: "+o)
 		}
+		
 	}
 
 	function getText() {
 		if(o.protocol =="https:"){
-			txt = "<div id='protocol-secure'>"+o.protocol+"</div>"+"<div id='hostname'>"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div>";
+			txt = "<div id='linkester-js-element'><div id='protocol-secure'>"+o.protocol+"</div>"+"<div id='hostname'>//"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div></div>";
 		}
+        
+        
+        
 
 		else {
-			txt = "<div id='protocol'>"+o.protocol+"</div>"+"<div id='hostname'>"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div>";
+			txt = "<div id='linkester-js-element'><div id='protocol'>"+o.protocol+"</div>"+"<div id='hostname'>//"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div></div>";
 		}
 	}
-
-
-function edit(){
-	element.onclick = function(e){
-		
-		e.preventDefault();
-
-	}
-}
 
 
 
