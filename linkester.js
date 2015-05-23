@@ -1,5 +1,6 @@
 // Linkester.js (C) 2015 by Zain Ali, jsfiler.altervista.org
-window.onload = function() {
+window.l = function() {
+
 	var obj = document.querySelectorAll("a"),
 		txt, newTrigger, browser,
 		cacheToken, element,
@@ -31,18 +32,28 @@ o.insertAdjacentHTML ("afterEnd", txt);
 
 	function getText() {
 		if(o.protocol =="https:"){
-			txt = "<div id='linkester-js-element'><div id='protocol-secure'>"+o.protocol+"</div>"+"<div id='hostname'>//"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div></div>";
+			txt = "<div id='linkester-js-element'><span id='protocol-secure'>"+o.protocol+"</span>"+"<span id='hostname'>//"+o.hostname+"</span>"+"<span id='pathname'>"+o.pathname+"</span>"+"<span id='title'></span></span>";
 		}
-        
+        else if(o.protocol =="mailto:"){
+        	txt = "<div id='linkester-js-element'><span id='protocol-mailto'>"+o.protocol+"</span>"+"<span id='hostname'>//"+o.hostname+"</span>"+"<span id='pathname'>"+o.pathname+"</span>"+"<span id='title'></span></span>";
+        }
+        else if(o.protocol =="ftp:"){
+        	txt = "<div id='linkester-js-element'><span id='protocol-ftp'>"+o.protocol+"</span>"+"<span id='hostname'>//"+o.hostname+"</span>"+"<span id='pathname'>"+o.pathname+"</span>"+"<span id='title'></span></span>";
+        }
         
         
 
 		else {
-			txt = "<div id='linkester-js-element'><div id='protocol'>"+o.protocol+"</div>"+"<div id='hostname'>//"+o.hostname+"</div>"+"<div id='pathname'>"+o.pathname+"</div>"+"<div id='title'></div></div>";
+			txt = "<div id='linkester-js-element'><span id='protocol'>"+o.protocol+"</span>"+"<span id='hostname'>//"+o.hostname+"</span>"+"<span id='pathname'>"+o.pathname+"</span>"+"<span id='title'></span></span>";
 		}
 	}
 
 
 
 
-};
+}
+
+window.onload = function(){
+	//for now the framework is not stable....
+	l();
+}
