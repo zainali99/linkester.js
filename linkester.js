@@ -52,8 +52,6 @@ o.insertAdjacentHTML ("afterEnd", txt);
 
 
 }
-
-window.onload = function(){
-	//for now the framework is not stable....
-	l();
-}
+/*
+l(); event-starter.
+*/
