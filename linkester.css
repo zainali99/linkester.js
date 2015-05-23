@@ -20,9 +20,19 @@ div#linkester-js-element {
 a:hover + #linkester-js-element{visibility:visible;transform: scale(1,1);opacity:1;}
 
 
-/* protocol */
+/* protocol-secure */
 
 div#protocol-secure {
 color: rgb(70, 201, 70);
 }
+
+/* mailto */
+span#protocol-mailto {
+  color: rgb(255, 99, 71);
+}
+/* ftp */
+span#protocol-ftp {
+  color: rgb(244, 42, 77);
+}
+
 
