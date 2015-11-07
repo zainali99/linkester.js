@@ -22,7 +22,7 @@ a:hover + #linkester-js-element{visibility:visible;transform: scale(1,1);opacity
 
 /* protocol-secure */
 
-div#protocol-secure {
+span#protocol-secure {
 color: rgb(70, 201, 70);
 }
 
