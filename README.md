@@ -1,4 +1,5 @@
 # linkester.js
+##not stable , alpha
 Highlight href and displays information about it in a tooltip
 ######load with l(); onload event.
 
