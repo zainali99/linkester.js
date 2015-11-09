@@ -3,8 +3,7 @@
 > * Highlight href and displays information about it in a tooltip
 
 To see how it works  pass the mouse over the links in this demo page:
-###Demo
-[View Demo](http://zainali99.github.io)
+##[View Demo](http://zainali99.github.io)
 
 
 
