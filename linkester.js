@@ -75,7 +75,20 @@ o.insertAdjacentHTML ("afterEnd", txt);
 		  }
     }
     
-  }
+  },
+  
+  getTitle: function(page) {
+  	var xhr = new XMLHttpRequest();
+	xhr.open("GET", page, true);
+	xhr.onreadystatechange = function() { 
+  	if (xhr.readyState == 4) {
+    	var title = (/<title>(.*?)<\/title>/m).exec(xhr.responseText)[1];
+  	}
+	
+	}
+	xhr.send();
+	return title;
+	 }
     
   
 })();
