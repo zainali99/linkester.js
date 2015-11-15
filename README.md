@@ -6,10 +6,20 @@ To see how it works  pass the mouse over the links in this demo page:
 ##[View Demo](http://zainali99.github.io)
 
 #Welcome to version 0.2
+
 ###linkester.applyTo(element);
+```javascript
+    
     window.onload = function(){
     linkester.applyTo(".container");
     }
+``````
+
+#####results of the tests
+Due to slowdowns and problems related to websites with their settings, linkester can't send requests with ajax.
+
+so I just created another event to get the title of the page manually, of course, works only on domains with no header set.
+
 
 > In the future (TODO)
 > * [Linkester Debug Center](http://zainali99.github.io/linkester.html)
