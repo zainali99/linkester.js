@@ -73,9 +73,9 @@ o.insertAdjacentHTML ("afterEnd", txt);
       if(o.protocol=="https:"){
 			console.log("token_SECURE_href: "+o);
 		  }
-    }
+    },
     
-  },
+  }
   
   getTitle: function(page) {
   	var xhr = new XMLHttpRequest();
