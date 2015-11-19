@@ -26,3 +26,8 @@ so I just created another event to get the title of the page manually, of course
 > * [Improve the structure of the code](https://github.com/zainali99/linkester.js/commit/33124af4d994f657603df52edd33e0a06cd4b6ee)
 > * Highlight syntax much more fluid in the calculation of the strings
 > * And finally, the launch of version 0.5
+
+#Project status:
+Closed.
+
+
